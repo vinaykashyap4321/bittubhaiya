@@ -9729,8 +9729,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .bg-gallery {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  min-height: 80vh; /* Set minimum height to the viewport height */
 }
 
 .gallery-carousel .owl-nav {
